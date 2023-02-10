@@ -27,7 +27,7 @@ SECRET_KEY = 'hiAnEBDQAs2WP3c7rskNY0ipilz52Eob5XztYaAnijfwP0lqCdaa0Spbqzg4'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['linkscontatos.azurewebsites.net/','https://linkscontatos.azurewebsites.net/','localhost']
+ALLOWED_HOSTS = ['linkscontatos.azurewebsites.net','https://linkscontatos.azurewebsites.net','localhost']
 
 
 # Application definition
