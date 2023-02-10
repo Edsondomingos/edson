@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ingrid - Psicóloga clínica</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, rgba(153, 0, 200, 0.7), pink);
+            text-shadow: 1px 1px 1px black;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin: auto;
+        }
+
+        main {
+
+
+            margin-top: 100px;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 100px;
+        }
+
+        main header {
+            margin-bottom: 20px;
+        }
+
+        main header img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        @media(max-width: 412px) {
+            div {
+                width: 250px;
+                display: contents;
+            }
+
+            main {
+                width: 250px;
+
+            }
+
+            main header {
+                width: 250px;
+                margin: auto;
+                text-align: center;
+            }
+
+            #contato {
+                width: 200px;
+            }
+
+            #links a {
+                width: 190px;
+            }
+
+            div footer {
+                text-align: center;
+                font-size: 10px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+
+        }
+
+        a:hover {
+            background-color: #fff;
+            color: aqua;
+        }
+
+        #links a {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            border: 2px solid #00f;
+            /* background-color: ; */
+            padding: 5px;
+            color: black;
+            font-size: 30px;
+            font-family: cursive;
+            margin-top: 10px;
+        }
+
+        #links a:hover {
+            transition: 0.5s;
+            color: aqua;
+        }
+
+        #contato {
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding: 20px;
+            color: #fff;
+            bottom: 0px;
+            font-weight: bolder;
+        }
+
+        footer a {
+            color: aqua;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <main>
+            <header>
+                <img src="https://media.licdn.com/dms/image/D4D03AQFsAScDi1EpUg/profile-displayphoto-shrink_800_800/0/1667498243856?e=2147483647&v=beta&t=FlHJn16Cnt-bSn9dORCWmF6LyJ_S8sQWpRxn1eRyibQ">
+                <h1>Edson Domingos</h1>
+                <p>Programador Web e Mobile</p>
+
+            </header>
+
+            <section id="contato">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+                    <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-gmail-social-media-justicon-flat-justicon.png"
+                        / width="20px" height="20px"> edomingoswork@gmail.com
+                </a>
+                <!-- <a href="" class="whatsapp">
+                    <img src="https://img.icons8.com/office/16/000000/whatsapp--v1.png" / width="20px" height="20p">
+                    (84) 99166-1673
+                </a> -->
+            </section>
+
+            <section id="links">
+                <p>Clique para me seguir</p>
+                <a href="https://www.instagram.com/edsondoming0s/" target="_blank">
+                    <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" width="50px" />@edsondoming0s
+                </a>
+                <a href="https://www.linkedin.com/in/edson-domingos/" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/linkedin.png" width="50px" />edson-domingos
+                </a>
+                <a href="" class="whatsapp">
+                    <img src="https://img.icons8.com/nolan/64/google-sites.png" width="50px" />Fale comigo
+                </a>
+            </section>
+
+
+        </main>
+
+        <footer>
+            Desenvolvido por <a href="https://br.linkedin.com/in/edson-domingos" target="_blank">
+                &copy;Edson Domingos<img src="https://img.icons8.com/color/48/000000/linkedin.png" width="20px" /></a>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        let whatsapp = document.querySelectorAll('.whatsapp');
+
+            whatsapp.forEach((e,f) => {
+                    e.addEventListener('click', function() {
+                    if (window.screen.width > 452){
+                        whatsapp[f].setAttribute(
+                            'href','https://web.whatsapp.com/send?phone=5584991661673&text=Olá,+quero+agendar+um+dia!'
+                        )
+                        whatsapp[f].setAttribute('target','_blank')
+                    } else {
+                        whatsapp[f].setAttribute(
+                            'href','https://api.whatsapp.com/send?phone=5584991661673&text=Olá,+quero+agendar+um+dia!'
+                        )
+                        whatsapp[f].setAttribute('target','_blank')
+                    }
+                
+            })})
+    </script>
+</body>
+
+</html>
